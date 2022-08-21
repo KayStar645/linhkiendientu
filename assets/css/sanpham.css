@@ -1,0 +1,160 @@
+@media (max-width: 1023px) {
+    .col {
+        flex: 1 0 100%;
+        margin-bottom: 40px;
+    }
+}
+
+#main__right-img {
+    width: 50%;
+    padding: 0 15px;
+}
+
+#main__right-detail {
+    width: 50%;
+    padding: 10px 15px;
+}
+
+.main__right-heading1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 600;
+    color: red;
+    padding: 15px 0;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+#main__right-content {
+    width: 100%;
+    padding: 0px 15px;
+    margin-top: 40px;
+}
+
+.title-content {
+    font-size: 32px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.tabs {
+    display: flex;
+    position: relative;
+  }
+
+.tab-content {
+    padding: 28px 0;
+  }
+.tab-pane {
+    color: #333;
+    display: none;
+  }
+.tab-pane.active {
+    display: block;
+  }
+.tab-pane h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top:30px;
+  }
+
+.tab-pane h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    margin-top:30px;
+    font-weight:700;
+  }
+
+.tab-pane p {
+    font-size: 17px;
+    text-align: justify;
+  }
+
+.tab-pane ul {
+    margin-top:8px;
+    list-style-type: circle;
+    padding:10px;
+  }
+.tab-pane li {
+    font-size: 17px;
+    text-align: justify;
+    margin-top:5px;
+    padding:5px;
+  }
+
+
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #de2c29;
+    transition: all 0.2s ease;
+  }
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #0a090a;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+.tab-icon {
+    font-size: 24px;
+    width: 32px;
+    position: relative;
+    top: 2px;
+  }
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+  }
+.tab-item.active {
+    opacity: 1;
+  }
+
+.tab-img {
+    width: 100%;
+}
+
+.wapper{
+    height:40px;
+    width:130px;
+    display:flex;
+    align-items:center ;
+    justify-content: center;
+    background:#fff;
+    border-radius: 12px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2) ;
+}
+
+.wapper span{
+    width:50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight:600;
+}
+
+.wapper span.num{
+    font-size:25px;
+    border-right:2px solid rgba(0,0,0,0.2);
+    border-left:2px solid rgba(0,0,0,0.2);
+}

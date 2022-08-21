@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mạch điện Tử Và Khoa Học Công Nghệ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="../assets/img/Logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/main_PC.css" />
+    <link rel="stylesheet" href="../assets/css/main_Tablet.css" />
+    <link rel="stylesheet" href="../assets/css/TaiKhoan/GioiThieu.css" />
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swapsubset=vietnamese" />
+    <link rel="stylesheet" href="../assets/css/TaiKhoan/TaiKhoan.css" />
+    <link rel="stylesheet" href="../assets/css/TaiKhoan/CamBien.css" />
+    <link rel="stylesheet" href="../assets/css/sanpham.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- Header introduce -->
+        <!-- Thông tin sđt và email -->
+        <div class="header__introduce  gird">
+            <div class="header__introduce-info">
+                <ul class="header__introduce-info-list">
+                    <li class="header__introduce-info-items header__introduce-info-items--vertical"><strong>Hotline: 032.9641.343</strong></li>
+                    <li class="header__introduce-info-items"><strong>Email: D2T@linhkiendientu.vn</strong></li>
+                </ul>
+            </div>
+
+            <!-- Tạo tài khoản, chính sách bảo mât và đăng nhập -->
+            <div class="header__introduce-account">
+                <ul class="header__introduce-account-list">
+                    <li class="header__introduce-account-items">
+                        <a href="../TaiKhoan/TaiKhoan.html" class="header__introduce-account-link"> Tài khoản</a>
+                    </li>
+                    <li class="header__introduce-account-items header__introduce-account-items--vertical">
+                        <a href="../TaiKhoan/BaoMat.html"  class="header__introduce-account-link"> Chính sách bảo mật</a>
+                    </li>
+                    <li class="header__introduce-account-items">
+                        <a href="../TaiKhoan/TaiKhoan.html"  class="header__introduce-account-link"> Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Header Shop -->
+        <div class="header__shop">
+            <div class="gird">
+                <!-- MENU Tablet và Mobile - Start -->
+                <!-- Các Icon -->
+                <!-- Các icon sẽ hiển thị trên header trong table và mobile -->
+                <div class="table-icon">
+                    <div>
+                        <!-- Đây là icon khi người dùng click vào sẽ hiện ra menu -->
+                        <i id="header__mobile-menu" class="fa fa-bars table-icon header__mobile-menu"></i>
+                    </div>
+                    <!-- Đây là icon tìm kiếm và giỏ hàng -->
+                    <i class="fa-solid fa-magnifying-glass header__mobile-search table-icon"></i>
+                    <i class="fa-solid fa-cart-shopping header__mobile-cart table-icon"></i>
+                </div>
+
+                <!-- Menu chính -->
+                <!-- Đây là menu trên tablet và mobile -->
+                <nav class="header__table" id="header__table">
+                    <div class="header__table-menu" id="header__table-menu">
+                    </div>
+                    <ul class="header__table-list">
+                        <li class="header__table-items header__table-items-underlined">
+                            <a href="../index.html" class="header__table-link">
+                                TRANG CHỦ
+                            </a>
+                        </li>
+                        <li class="header__table-items header__table-items-underlined">
+                            <a href="../TaiKhoan/GioiThieu.html" class="header__table-link">
+                                GIỚI THIỆU
+                            </a>
+                        </li>
+                        <li class="header__table-items header__table-items-underlined">
+                            <a id="SP" href="../TaiKhoan/SanPham.html" class="header__table-link">
+                                SẢN PHẨM
+                            </a>
+                            <i id="header__table-items2-icon" class="fa-solid fa-angle-down header__table-items2-icon"></i>
+                            <!-- Đây là menu cấp 2 trong tablet và mobile -->
+                            <ul id="header__table-list2" class="header__table-list2">
+                                <li class="header__table-items2">
+                                    <a href="../TaiKhoan/CamBien.html" class="header__table-link2">Cảm biến</a>
+                                </li>
+                                <li class="header__table-items2">
+                                    <a href="../TaiKhoan/LinhKienDienTu.html" class="header__table-link2">Linh kiện điện tử</a>
+                                </li>
+                                <li class="header__table-items2">
+                                    <a href="../TaiKhoan/MachDien.html" class="header__table-link2">Mạch điện</a>
+                                </li>
+                                <li class="header__table-items2">
+                                    <a href="../TaiKhoan/Module.html" class="header__table-link2">Module</a>
+                                </li>
+                                <li class="header__table-items2">
+                                    <a href="../TaiKhoan/PhuKien_DungCu.html" class="header__table-link2">Phụ kiện & Dụng cụ</a>
+                                </li>
+                                <li class="header__table-items2">
+                                    <a href="../TaiKhoan/Robot_CongNghe.html" class="header__table-link2">Robot & Công nghệ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__table-items header__table-items-underlined">
+                            <a href="../TaiKhoan/TinTuc.html" class="header__table-link">
+                                TIN TỨC
+                            </a>
+                        </li>
+                        <li class="header__table-items header__table-items-underlined">
+                            <a href="../TaiKhoan/LienHe.html" class="header__table-link">
+                                LIÊN HỆ
+                            </a>
+                        </li>
+                        <li class="header__table-items">
+                            <a href="../TaiKhoan/TaiKhoan.html" class="header__table-link">
+                                ĐĂNG NHẬP
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- <div id="header__mobile">
+                </div> -->
+                <!-- MENU Tablet và Mobile - End -->
+
+                <!-- Logo của website - Hiển thị bên trái header -->
+                <div class="header__shop-logo">
+                    <a href="../index.html"> 
+                        <img src="../assets/img/Logo.png" class="header__shop-logo-img" alt="Logo linh kiện điện tử" />
+                    </a>
+                </div>
+                <!-- Các icon và thông tin sẽ hiển thị bên phải của header -->
+                <div class="header__cart">
+                    <ul class="header__cart-list">
+                        <li class="header__cart-items">
+                            <a style="color: #fff;" href="#" class="header__cart-link">
+                                <div class="icon">
+                                    <i class="icon-i fa-solid fa-cart-shopping"></i>
+                                </div>
+                                Giỏ hàng
+                            </a>
+                        </li>
+                        <li class="header__cart-items">
+                            <a style="color: #fff;" href="#" class="header__cart-link">
+                                <div class="icon">
+                                    <i class="icon-i fa-solid fa-phone"></i>
+                                </div>
+                                <p style="display: inline-block; line-height: 16px; vertical-align: middle;">
+                                    <span>032.9641.345</span> <br />
+                                    <span style="font-size: 1.2rem; color: #d3d0d0;">Hotline mua hàng</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="header__cart-items">
+                            <a style="color: #fff;" href="#" class="header__cart-link">
+                                <div class="icon">
+                                    <i class="icon-i fa-solid fa-location-dot"></i>
+                                </div>
+                                <p style="display: inline-block; line-height: 16px; vertical-align: middle;">
+                                    <span">Thời trang làm việc</span> <br />
+                                    <span style="font-size: 1.2rem; color: #d3d0d0;">Mở cửa: 8:00 - 22:00</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav gird">
+            <!-- Header Navbar -->
+            <!-- Đây là menu sẽ hiện thị trên PC -->
+            <div class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-items header__navbar-items-vertical">
+                        <a href="../index.html" class="header__navbar-link">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="header__navbar-items header__navbar-items-vertical">
+                        <a href="../TaiKhoan/GioiThieu.html" class="header__navbar-link">
+                            Giới thiệu
+                        </a>
+                    </li>
+                    <li class="header__navbar-items header__navbar-items-vertical header__navbar-has-child">
+                        <a style="color: #666;" href="../TaiKhoan/SanPham.html" class="header__navbar-link">
+                            Sản phẩm
+                            <div class=" icon-none">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <!-- Header Navbar Navbar -->
+                        <div class="header__navbar-nav">
+                            <ul class="header__navbar-nav-list">
+                                <li class="header__navbar-nav-items">
+                                    <a href="../TaiKhoan/MachDien.html" class="header__navbar-nav-link">Mạch điện</a>
+                                </li>
+                                <li class="header__navbar-nav-items">
+                                    <a href="../TaiKhoan/CamBien.html" class="header__navbar-nav-link">Cảm biến</a>
+                                </li>
+                                <li class="header__navbar-nav-items">
+                                    <a href="../TaiKhoan/LinhKienDienTu.html" class="header__navbar-nav-link">Linh kiện điện tử</a>
+                                </li>
+                                <li class="header__navbar-nav-items">
+                                    <a href="../TaiKhoan/Module.html" class="header__navbar-nav-link">Module</a>
+                                </li>
+                                <li class="header__navbar-nav-items">
+                                    <a href="../TaiKhoan/PhuKien_DungCu.html" class="header__navbar-nav-link">Phụ kiện & Dụng cụ</a>
+                                </li>
+                                <li class="header__navbar-nav-items">
+                                    <a href="../TaiKhoan/Robot_CongNghe.html" class="header__navbar-nav-link">Robot & Công nghệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar-items header__navbar-items-vertical">
+                        <a href="../TaiKhoan/TinTuc.html" class="header__navbar-link">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="header__navbar-items">
+                        <a href="../TaiKhoan/LienHe.html" class="header__navbar-link">
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Header Search -->
+            <!-- Phần tìm kiếm bên phải menu -->
+            <div class="header__search">
+                <input type="text" class="header__search-input" placeholder="Bạn cần tìm gì?" />
+
+                <button class="header__search-shop" type="button">
+                    <i class="header__search-shop-icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="main__gird gird"> <!-- Cái khung của trang web -->
+            <div class="main__left">
+                <!-- Danh mục sản phẩm - Gom các sản phẩm thành các danh mục nhỏ - Hiển thị trên cùng bên trái main trang web -->
+                <ul class="main__left-category-list">
+                    <h2 class="main__left-title">DANH MỤC SẢN PHẨM</h2>
+                    <li class="main__left-category-items">
+                        <a href="../TaiKhoan/CamBien.html" class="main__left-category-link">
+                            Cảm biến
+                        </a>
+                    </li>
+                    <li class="main__left-category-items">
+                        <a href="../TaiKhoan/LinhKienDienTu.html" class="main__left-category-link">
+                            Linh kiện điện tử
+                        </a>
+                    </li>
+                    <li class="main__left-category-items">
+                        <a style="color: #000; font-weight: 500;" href="../TaiKhoan/MachDien.html" class="main__left-category-link">
+                            Mạch điện
+                        </a>
+                    </li>
+                    <li class="main__left-category-items">
+                        <a href="../TaiKhoan/Module.html" class="main__left-category-link">
+                            Module
+                        </a>
+                    </li>
+                    <li class="main__left-category-items">
+                        <a href="../TaiKhoan/PhuKien_DungCu.html" class="main__left-category-link">
+                            Phụ kiện & Dụng cụ
+                        </a>
+                    </li>
+                    <li class="main__left-category-items">
+                        <a href="../TaiKhoan/Robot_CongNghe.html" class="main__left-category-link">
+                            Robot & Công nghệ
+                        </a>
+                    </li>
+                </ul>
+                <!-- Main Left Promotional Products : Sản phẩm khuyến mãi -->
+                <!-- Một số sản phẩm khuyến mãi - Hiển thị dưới Danh mục sản phẩm -->
+                <h2 class="main__left-title main__left-margin-top">SẢN PHẨM KHUYẾN MÃI</h2>
+                <ul class="main__left-product-list">
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <img src="../assets/img/SPKM-1.jpg" alt="Mạch khuyến đại âm thanh" class="main__left-product-img" />
+                        <a href="./Module1.html" class="main__left-product-link">
+                            <span class="main__left-product-title">Mạch khuếch đại âm thanh bluetooth XY-P15 2x15W</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product">99.000đ</span>
+                        <span class="main__left-product-omount"><strong>90.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical  main__left-new">
+                        <a href="./CamBien1.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-2.jpg" alt="Công tắc cảm biến quá dòng AC 5A" class="main__left-product-img" />
+                            <span class="main__left-product-title">Công tắc cảm biến quá dòng AC 5A</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>95.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical  main__left-new">
+                        <a href="./Module2.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-3.jpg" alt="Mạch tăng áp có hiển thị 6A" class="main__left-product-img" />
+                            <span class="main__left-product-title">Mạch tăng áp có hiển thị 6A</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>115.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./Module3.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-4.jpg" alt="Mạch tăng áp DC XL6019 5A V2.0" class="main__left-product-img" />
+                            <span class="main__left-product-title">Mạch tăng áp DC XL6019 5A V2.0</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product">66.000đ</span>
+                        <span class="main__left-product-omount"><strong>52.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical  main__left-new">
+                        <a href="./SP5.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-5.jpg" alt="Công tắc gạc 6 chân 6A (2 trạng thái)" class="main__left-product-img" />
+                            <span class="main__left-product-title">Công tắc gạc 6 chân 6A (2 trạng thái)</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>6.500đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical  main__left-new">
+                        <a href="./SP6.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-6.jpg" alt="Bộ vỏ mica cho cảm biến nhiệt độ relay chỉnh mức XH-W120" class="main__left-product-img" />
+                            <span class="main__left-product-title">Bộ vỏ mica cho cảm biến nhiệt độ relay chỉnh mức XH-W120</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>15.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./SP7.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-7.jpg" alt="Dây cáp (cable) Node MCU, dây sạc micro usb" class="main__left-product-img" />
+                            <span class="main__left-product-title">Dây cáp (cable) Node MCU, dây sạc micro usb</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>16.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./SP8.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-8.png" alt="Cặp led thu phát hồng ngoại 5mm" class="main__left-product-img" />
+                            <span class="main__left-product-title">Cặp led thu phát hồng ngoại 5mm</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>3.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./SP9.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-9.jpg" alt="Bộ tua vít chất lượng cao" class="main__left-product-img" />
+                            <span class="main__left-product-title">Bộ tua vít chất lượng cao</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product">95.000đ</span>
+                        <span class="main__left-product-omount"><strong>88.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items">
+                        <a href="./SP10.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-10.jpg" alt="Giấy in mạch, giấy in chuyển nhiệt chuyên dụng" class="main__left-product-img" />
+                            <span class="main__left-product-title">Giấy in mạch, giấy in chuyển nhiệt chuyên dụng</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>1.500đ</strong></span>
+                    </li>
+                </ul>
+
+                <!-- Main Left New products : Sản phẩm mới -->
+                <!-- Một số sản phẩm mới của cửa hàng - Hiển thị dưới Sản phẩm khuyến mãi -->
+                <h2 class="main__left-title main__left-margin-top">SẢN PHẨM MỚI</h2>
+                <ul class="main__left-product-list">
+                    <li class="main__left-product-items main__left-product-items--vertical  main__left-new">
+                        <img src="../assets/img/SPKM-1.jpg" alt="Mạch khuyến đại âm thanh" class="main__left-product-img" />
+                        <a href="./Module1.html" class="main__left-product-link">
+                            <span class="main__left-product-title">Mạch khuếch đại âm thanh bluetooth XY-P15 2x15W</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product">99.000đ</span>
+                        <span class="main__left-product-omount"><strong>90.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./CamBien1.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-2.jpg" alt="Công tắc cảm biến quá dòng AC 5A" class="main__left-product-img" />
+                            <span class="main__left-product-title">Công tắc cảm biến quá dòng AC 5A</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>95.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./Module2.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-3.jpg" alt="Mạch tăng áp có hiển thị 6A" class="main__left-product-img" />
+                            <span class="main__left-product-title">Mạch tăng áp có hiển thị 6A</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>115.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./Module3.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-4.jpg" alt="Mạch tăng áp DC XL6019 5A V2.0" class="main__left-product-img" />
+                            <span class="main__left-product-title">Mạch tăng áp DC XL6019 5A V2.0</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product">66.000đ</span>
+                        <span class="main__left-product-omount"><strong>52.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./SP5.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-5.jpg" alt="Công tắc gạc 6 chân 6A (2 trạng thái)" class="main__left-product-img" />
+                            <span class="main__left-product-title">Công tắc gạc 6 chân 6A (2 trạng thái)</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>6.500đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./SP6.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-6.jpg" alt="Bộ vỏ mica cho cảm biến nhiệt độ relay chỉnh mức XH-W120" class="main__left-product-img" />
+                            <span class="main__left-product-title">Bộ vỏ mica cho cảm biến nhiệt độ relay chỉnh mức XH-W120</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>15.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./SP7.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-7.jpg" alt="Dây cáp (cable) Node MCU, dây sạc micro usb" class="main__left-product-img" />
+                            <span class="main__left-product-title">Dây cáp (cable) Node MCU, dây sạc micro usb</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>16.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical">
+                        <a href="./SP8.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-8.png" alt="Cặp led thu phát hồng ngoại 5mm" class="main__left-product-img" />
+                            <span class="main__left-product-title">Cặp led thu phát hồng ngoại 5mm</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>3.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items main__left-product-items--vertical  main__left-new">
+                        <a href="./SP9.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-9.jpg" alt="Bộ tua vít chất lượng cao" class="main__left-product-img" />
+                            <span class="main__left-product-title">Bộ tua vít chất lượng cao</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product">95.000đ</span>
+                        <span class="main__left-product-omount"><strong>88.000đ</strong></span>
+                    </li>
+                    <li class="main__left-product-items  main__left-new">
+                        <a href="./SP10.html" class="main__left-product-link">
+                            <img src="../assets/img/SPKM-10.jpg" alt="Giấy in mạch, giấy in chuyển nhiệt chuyên dụng" class="main__left-product-img" />
+                            <span class="main__left-product-title">Giấy in mạch, giấy in chuyển nhiệt chuyên dụng</span>
+                        </a>
+                        <br />
+                        <span class="main__left-product-omount"><strong>1.500đ</strong></span>
+                    </li>
+                </ul>
+                <!-- Main Left Post -->
+                <!-- Các bài báo mới - Hiển thị dưới Sản phẩm mới -->
+                <h2 class="main__left-title main__left-margin-top">BÀI VIẾT MỚI</h2>
+                <ul class="main__left-posts-list">
+                    <li class="main__left-posts-items main__left-posts-items--vertical">
+                        <img src="../assets/img/BV-1.jpg" alt="Phim siêu anh hùng" class="main__left-posts-img" />
+                        <a href="#" class="main__left-posts-link">
+                            <span class="main__left-posts-title">Anh em đạo diễn Russo: Sức hút của 
+                                "Avengers: Endgame quá lớn, không cần bỏ tiền marketing</span>
+                        </a>
+                    </li>
+                    <li class="main__left-posts-items main__left-posts-items--vertical">
+                        <img src="../assets/img/BV-2.jpg" alt="Tổng thống Trump" class="main__left-posts-img" />
+                        <a href="#" class="main__left-posts-link">
+                            <span class="main__left-posts-title">Tổng thống Trump: “Tôi sẽ không bao giờ bước vào trong một chiếc xe tự lái”</span>
+                        </a>
+                    </li>
+                    <li class="main__left-posts-items main__left-posts-items--vertical">
+                        <img src="../assets/img/BV-3.jpg" alt="Hình ảnh Facebook" class="main__left-posts-img" />
+                        <a href="#" class="main__left-posts-link">
+                            <span class="main__left-posts-title">Facebook bổ sung thêm tab Gaming vào ứng dụng trên smartphone</span>
+                        </a>
+                    </li>
+                    <li class="main__left-posts-items" style="padding-bottom: 20px;"> <!-- Nội tuyến -->
+                        <img src="../assets/img/BV-4.jpg" alt="Hình ảnh Galaxy S10" class="main__left-posts-img" />
+                        <a href="#" class="main__left-posts-link">
+                            <span class="main__left-posts-title">Đôi điều về gốm trên Galaxy S10</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Right -->
+            <!-- Đây là phần thân bên phải của trang web -->
+            <div class="main__right">
+                <div class="row">
+                    <div id="main__right-img" class="col">
+                        <img src="../assets/img/SanPham/MachDien6.jpg" width="100%" alt="Hình ảnh ..." />
+                    </div>
+                    <div id="main__right-detail" class="col">
+
+                        <ul>
+                            <li class="main__title-item">
+                                <a href="../index.html">Trang chủ</a>
+                            </li>
+                            <li class="main__title-item">
+                                <a href="../TaiKhoan/SanPham.html">Sản phẩm</a>
+                            </li>
+                            <li class="main__title-item">
+                                <a href="../TaiKhoan/MachDien.html">Mạch điện</a>
+                            </li>
+                        </ul>
+
+                        <h1 class="main__right-heading1">Mạch điện Tử Và Khoa Học Công Nghệ</h1>
+                        <p class="price">98.000đ</p>
+                        <p class="title">Mạch điện Tử Và Khoa Học Công Nghệ</p>
+                        <div class="wapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+
+                        <button class="mainAccount-button">THÊM VÀO GIỎ HÀNG</button>
+                        <script>
+                            const plus = document.querySelector(".plus"),
+                             minus = document.querySelector(".minus"),
+                             num = document.querySelector(".num");
+                             let a = 1;
+                             plus.addEventListener("click", ()=>{
+                               a++;
+                               a = (a < 10) ? "0" + a : a;
+                               num.innerText = a;
+                             });
+                         
+                             minus.addEventListener("click", ()=>{
+                               if(a > 1){
+                                 a--;
+                                 a = (a < 10) ? "0" + a : a;
+                                 num.innerText = a;
+                               }
+                             });
+                         
+                           </script>
+                    </div>
+                    <div id="main__right-content">
+                        <div>
+                            <!-- Tab items -->
+                            <div class="tabs">
+                              <div class="tab-item active">
+                                Mô tả
+                              </div>
+                              <div class="line"></div>
+                            </div>
+                          
+                            <!-- Tab content -->
+                            <div class="tab-content">
+                              <div class="tab-pane active">
+                                <p>Mạch điện Tử Và Khoa Học Công Nghệ</p>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+                <script>
+                    const $ = document.querySelector.bind(document);
+                    const $$ = document.querySelectorAll.bind(document);
+                    
+                    const tabs = $$(".tab-item");
+                    const panes = $$(".tab-pane");
+                    
+                    const tabActive = $(".tab-item.active");
+                    const line = $(".tabs .line");
+                    
+                    requestIdleCallback(function () {
+                      line.style.left = tabActive.offsetLeft + "px";
+                      line.style.width = tabActive.offsetWidth + "px";
+                    });
+                    
+                    tabs.forEach((tab, index) => {
+                      const pane = panes[index];
+                    
+                      tab.onclick = function () {
+                        $(".tab-item.active").classList.remove("active");
+                        $(".tab-pane.active").classList.remove("active");
+                    
+                        pane.classList.add("active");
+                      };
+                    });
+                </script>
+                <script>
+                    function up(max) {
+                        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+                        if (document.getElementById("myNumber").value >= parseInt(max)) {
+                         document.getElementById("myNumber").value = max;
+                        }
+                                    }
+                    function down(min) {
+                    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+                    if (document.getElementById("myNumber").value <= parseInt(min)) {
+                    document.getElementById("myNumber").value = min;
+                            }
+                            }
+
+                </script>                    
+                <!-- MÔ tả -->
+
+                <!-- Sản phẩm tương tự: coppy bên bài của t -->
+            
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer clear">
+        <div class="gird">
+            <ul>
+                <!-- Hình -->
+                <li class="footer__introduce">
+                    <img src="../assets/img/Logo_footer.png" alt="" class="footer__introduce-img">
+                    <p class="footer__introduce-content">
+                        Cửa hàng của chúng tôi luôn đặt mình vào vị trí của khách hàng để hiểu được bạn đang gặp khó
+                        khăn gì? Các cửa hàng hiện nay đang gặp khó khăn về quản lý và vận hàng website của mình. Chưa 
+                        tìm được đối tác quan trọng trong trách nhiệm quản lý website của bạn.
+                    </p>
+                </li>
+                <li class="footer__category">
+                    <ul class="footer__category-list">
+                        <h3 class="footer__category-heading">DANH MỤC</h3>
+                        <li class="footer__category-items">Cảm biến</li>
+                        <li class="footer__category-items">Linh kiện điện tử</li>
+                        <li class="footer__category-items">Mạch điện</li>
+                        <li class="footer__category-items">Module</li>
+                        <li class="footer__category-items">Phụ kiện & Dụng cụ</li>
+                        <li class="footer__category-items">Robot & Công nghệ</li>
+                    </ul>
+                </li>
+                <li class="footer__info">
+                    <p class="footer__info-content">
+                        <strong style="font: 1.6rem; font-weight: 500; color: #222;">Địa chỉ: (Trụ sở chính)</strong> 140 Lê Trọng Tấn, phường Tây Thạnh, quận Tân Phú, Thành phố Hồ Chí Minh.
+                        SĐT: 0376.7568.976 (Anh Thuận).
+                    </p>
+                    
+                    <p class="footer__info-content">
+                        <strong style="font: 1.6rem; font-weight: 500; color: #222;">Địa chỉ: (Chi nhánh Tân Bình)</strong> 276 Cộng Hòa, phường Tây Thạnh, quận Tân Bình, Thành phố Hồ Chí Minh.
+                        SĐT: 0385.9725.524 (Anh Tân).
+                    </p>
+
+                    <p class="footer__info-content">
+                        <strong style="font: 1.6rem; font-weight: 500; color: #222;">Địa chỉ: (Chi nhánh Thủ Đức)</strong> 276 Liên Phường, phường Phước Long A, Thành phố Thủ Đức, Thành phố Hồ Chí Minh.
+                        SĐT: 0385.7525.524 (Anh Duy).
+                    </p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../assets/Javascript/main.js"></script>
+</body>
+</html>

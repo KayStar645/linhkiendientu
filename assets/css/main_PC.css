@@ -1,0 +1,818 @@
+                             /* HEADER    */
+/* Header introduce */
+
+.header {
+    background-color: #fff;   
+}
+
+.header__introduce {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+}
+
+.header__introduce-info {
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.header__introduce-info-list {
+
+}
+
+.header__introduce-info-items {
+    display: inline-block;
+    padding-right: 12px;
+    position: relative;
+}
+
+.header__introduce-info-items--vertical::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.5px;
+    height: 14px;
+    background-color: #000;
+    left: calc(100% - 6px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__introduce-account {
+    padding: 0 15px;
+    font-size: 1.3rem;
+}
+
+.header__introduce-account-list {
+
+}
+
+.header__introduce-account-items,
+.header__introduce-account-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #999;
+    padding-left: 10px;
+}
+
+.header__introduce-account-items {
+    position: relative;
+    
+}
+
+.header__introduce-account-items--vertical::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(206, 206, 206);
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__introduce-account-link:hover,
+.header__introduce-account-link:active {
+    color: #555;
+}
+
+/* Header Shop */
+.header__shop {
+    height: 86px;
+    background-color: #dc0021;
+    display: flex;
+    
+}
+
+.header__shop-logo {
+    display: inline-block;
+    padding: 0 15px;
+    width: 260px;
+    height: 100%;
+}
+
+.header__shop-logo-img {
+    width: 100%;
+    padding: 5px 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+
+.header__cart {
+    padding: 0 15px;
+    float: right;
+    font-size: 1.6rem;
+}
+
+.header__cart-list {
+    line-height: 86px;
+}
+
+.header__cart-items {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.header__cart-link {
+    text-decoration: none;
+    color: white;
+    padding: 8px 0;
+}
+
+.icon {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: #c11a1f;
+    border-radius: 17px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.icon-i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Header navbar */
+
+.header__nav {
+    padding: 0 15px;
+    height: 40px;
+    font-size: 1.5rem;
+    line-height: 40px;    
+}
+
+.header__navbar {
+    display: inline-block;
+}
+
+.header__navbar-list {
+
+}
+
+.header__navbar-items {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 18px;
+    padding: 12px 0;
+    position: relative;
+}
+
+.header__navbar-items-vertical::after {
+    content: "";
+    width: 0.8px;
+    height: 16px;
+    background-color: #adadad;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px);
+    transform: translateY(-50%);
+
+}
+
+.header__navbar-link {
+    text-decoration: none;
+    color: #999; 
+    padding: 12px 0;
+}
+
+.header__navbar-link:hover {
+    color: #666;
+}
+
+.icon-none {
+    display: inline;
+}
+
+/* Header Navbar Navbar */
+.header__navbar-nav {
+    width: 270px;
+    background-color: #f3f5f7;
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px #999;
+    font-size: 1.6rem;
+    top: 100%;
+    left: -12px;
+    display: none;
+    z-index: 1000;
+}
+
+.header__navbar-has-child:hover
+ .header__navbar-nav{
+    display: block;
+}
+
+/* .header__navbar-nav::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 40px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 10px solid #f3f5f7;
+    box-shadow: 2px 2px 10px #999;
+} */
+
+.header__navbar-nav-list {
+    padding: 20px 0;
+}
+
+.header__navbar-nav-items {
+    color: #999;
+}
+
+.header__navbar-nav-link {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    padding: 10px 20px;
+}
+
+.header__navbar-nav-link:hover {
+    background-color: #dfdfdf;
+    color: #666;
+}
+
+/* Header Search */
+
+.header__search {
+    width: 40%;
+    float: right;
+}
+
+.header__search-input {
+    height: 32px;
+    width: calc(100% - 34px);
+    max-width: calc(100% - 34px);
+    outline: none;
+    border: 1px solid #dfdfdf;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.header__search-shop {
+    width: 34px;
+    height: 32px;
+    background-color: #dc0300;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+
+.header__search-shop:hover {
+    background-color: #c11a1f;
+    cursor: pointer;
+}
+
+.header__search-shop-icon {
+    color: white;
+    font-size: 1.8rem;
+}
+
+                            /* MAIN */
+.main {
+    margin-top: 30px;
+    
+}
+
+.main__gird {
+    height: 100%;
+}
+
+            /* MAIN LEFT */
+
+.main__left {
+    height: auto;
+    /* background-color: #fff; */
+    width: 26%;
+    /* display: inline-block; */
+    float: left;
+    padding: 0 15px 30px 15px;
+    height: auto;
+}
+
+/* Main Left Category */
+.main__left-category-list {
+    background-color: #fff;
+}
+
+.main__left-title {
+    text-align: center;
+    height: auto;
+    padding: 10px 15px;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: white;
+    font-size: 1.6rem;
+    background-color: #dc0300;
+    border-radius: 6px 6px 0 0;
+    word-wrap: break-word;
+}
+
+.main__left-category-items {
+    background: url(../img/signal.jpg);
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position-y: 14px;
+    background-position-x: 10px;
+    font-size: 1.6rem;
+    border: 1px solid #ebe8e8;
+}
+
+.main__left-category-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 6px 0px 6px 36px;
+    line-height: 24px;
+}
+
+.main__left-category-link:hover {
+    color: #dc0021;
+}
+
+/* Main Left Promotional Products : Sản phẩm khuyến mãi */
+.main__left-margin-top {
+    margin-top: 10px;
+}
+
+.main__left-product-list {
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #e4e3e3;
+}
+
+.main__left-product-items {
+    padding: 10px 0 10px 75px;
+    position: relative;
+}
+
+.main__left-product-items--vertical::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    background-color: #e7e5e5;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main__left-product-img {
+    width: 60px;
+    position: absolute;
+    margin-bottom: 5px;
+    top: 10px;
+    left: 0;
+}
+
+.main__left-product-link {
+    text-decoration: none;
+    color: #666;
+    font-size: 1.6rem;   
+}
+
+.main__left-product-link:hover {
+    color: #dc0021;
+}
+
+.main__left-product-title {
+    line-height: 20px;
+}
+
+.main__left-product {
+    font-size: 1.6rem;
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 8px;
+}
+
+.main__left-product-omount {
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Main Left Post */
+.main__left-posts-list {
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #e4e3e3;
+}
+
+.main__left-posts-items {
+    padding: 10px 0 10px 64px;
+    position: relative;
+}
+
+.main__left-posts-items--vertical::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    background-color: #e7e5e5;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main__left-posts-link {
+    text-decoration: none;
+    color: #666;
+    font-size: 1.6rem;   
+}
+
+.main__left-posts-link:hover {
+    color: #dc0021;
+}
+
+.main__left-posts-img {
+    width: 46px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.main__left-posts-title {
+    line-height: 20px;
+}
+
+              /* MAIN RIGHT */
+
+.main__right {
+    height: auto;
+    width: 74%;
+    float: left;
+    padding: 0 15px 30px 15px;
+}
+
+/* Panel */
+.main__right-panel {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    position: relative;
+}
+
+.main__right-panel:hover .panel-prev,
+.main__right-panel:hover .panel-next {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.panel-prev {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 25px;
+    border: 3px solid #fff;
+    display: none;
+}
+
+.panel-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 25px;
+    border: 3px solid #fff;
+    display: none;
+}
+
+.panel-prev:hover, .panel-next:hover {
+    background-color: #ccc;
+}
+
+.button-prev, .button-next {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+
+.main__right-panel-img {
+    width: 100%;
+}
+
+/* Sensor - Cảm biến */
+.main__right-heading {
+    background: url(../img/heading.png);
+    width: 100%;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 20px 0;
+}
+
+.main__right-heading-title {
+    height: 100%;
+    line-height: 36px;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 2px 20px;
+}
+
+.main__right-heading-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 4px;
+}
+
+.main__right-heading-link:hover {
+    color: red;
+}
+
+.main__right-heading-icon {
+    font-size: 1.2rem;
+    padding: 0 6px;
+}
+
+.main__right-sensor-list {
+    
+    display: inline-block;
+    height: auto;
+    background-color: #fff;
+}
+
+.main__right-sensor-items {
+    width: 25%;
+    float: left;
+    line-height: 20px;
+    background-color: #fff;
+    padding: 0 15px 30px 15px;
+    border: 1px solid #f5f5f5;
+    transition: all ease 0.5s;
+    position: relative;
+}
+
+.main__right-sensor-items:hover {
+    box-shadow: 1px 1px 6px #999;
+    z-index: 100;
+    position: relative;
+    transform: scale(1.1);
+}
+
+.main__right-sensor-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.4rem;
+}
+
+.main__right-sensor-img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.main__right-sensor-title {
+    display: inline-block;
+    padding-left: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.main__right-sensor-title:hover {
+    color: #fd2b2b;
+}
+
+.main__right-sensor-price {
+    padding: 0 8px;
+    color: #d10000;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.main__right-sensor-promotion {
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 8px;
+}
+
+/* Linh kiện điện tử */
+.main__right-sensor-list {
+    position: relative;
+}
+
+.main__right-sensor-list:hover .main__right-sensor-prev,
+.main__right-sensor-list:hover .main__right-sensor-next {
+    display: block;
+}
+
+.main__right-sensor-prev {
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    display: none;
+}
+
+.main__right-sensor-next {
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.sensor-button-prev,
+.sensor-button-next {
+    font-size: 30px;    
+}
+
+.sensor-button-prev:hover,
+.sensor-button-next:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.main__right-sensor-item {
+    width: 100%;
+    margin-bottom: 5px;
+    float: left;
+    line-height: 20px;
+    background-color: #fff;
+    padding: 0 15px 30px 15px;
+
+    transition: all ease 0.5s;
+    position: relative;
+}
+
+.main__right-sensor-item:hover {
+    box-shadow: 2px 2px 20px 5px #c2c2c2;
+    z-index: 100;
+    position: relative;
+    transform: scale(1.1);
+}
+
+/* <!-- Electrical Circuit : Mạch điện - Start --> */
+.main__right-sensor-list:hover .main__right-electrical-prev,
+.main__right-sensor-list:hover .main__right-electrical-next {
+    display: block;
+}
+
+.main__right-electrical-prev {
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    display: none;
+}
+
+.main__right-electrical-next {
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.electrical-button-prev,
+.electrical-button-next {
+    font-size: 30px;    
+}
+
+.electrical-button-prev:hover,
+.electrical-button-next:hover {
+    cursor: pointer;
+    color: red;
+}
+
+
+            /* MAIN INSTALLATION */
+.main__installation {
+    height: auto;
+    width: 100%;
+    padding: 0 15px;
+    line-height: 1.6rem;
+}
+
+.main__installation-box {
+    width: 25%;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    padding: 16px 0;
+    line-height: 20px;
+}
+
+.main__installation-strong {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.main__installation-title {
+    color: #777;
+    font-size: 1.2rem;
+}
+
+                                /* FOOTER */
+.footer {
+    border-top: 2px solid red;
+    margin-top: 50px;
+    padding-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #777;
+    line-height: 22px;
+    height: auto;
+}
+
+.footer__introduce {
+    width: 40%;
+    text-align: center;
+    padding: 0 15px 30px 15px;
+    display: inline-block;
+}
+
+.footer__introduce-img {
+    width: 300px;
+}
+
+.footer__introduce-content {
+    text-align: justify;
+    padding-top: 20px;
+}
+
+
+.footer__category {
+    width: 20%;
+    padding: 0 15px 30px 15px;
+    display: inline-block;
+}
+
+.footer__category-list {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.footer__category-heading {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #222;
+}
+
+.footer__category-items {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+.footer__info {
+    width: 39%;
+    display: inline-block;
+}
+
+.footer__info-content {
+    padding: 0 15px 20px 15px;
+}
+
+
+/* ẨN MỘT SỐ CHI TIẾT TRÊN PC */
+@media (min-width: 1024px) {
+	
+    /* Header Navbar */
+    .header__table,
+    .table-icon {
+        display: none;
+    }
+
+
+}

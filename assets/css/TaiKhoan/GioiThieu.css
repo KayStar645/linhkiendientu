@@ -1,0 +1,108 @@
+/* Menu cấp 2 */
+.header__table-items {
+    position: relative;
+}
+
+.header__table-items2-icon {
+    position: absolute;
+    top: 24px;
+    transform: translateY(-50%);
+    right: 20px;
+    color: #444;
+}
+
+
+/* CSS nè */
+.header__table-list2 {
+    display: none;
+}
+
+.header__table-link2 {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0 10px 50px;
+    text-decoration: none;
+    color: #999;
+}
+/* Kết thúc menu cấp 2 */
+
+.mainGT {
+    width: 100%;
+    padding: 0 15px;
+    color: #444;
+    line-height: 26px;
+}
+
+.mainGT__heading {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    font-weight: 500;
+}
+
+.mainGT__content {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.mainGT__content-p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.mainGT__content-list {
+}
+
+.mainGT__content-items {
+    font-size: 16px;
+    list-style-type: square;
+    margin-left: 40px;
+}
+
+.mainGT__content-left {
+    margin-top: 20px;
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+}
+
+.mainGT__content-right {
+    margin-top: 20px;
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+}
+
+.mainGT__content-right iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.mainGT-TTT {
+    width: 80%;
+    margin: auto;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+@media (max-width: 1023px) {
+    .mainGT__content-left,    
+    .mainGT__content-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mainGT__content-right iframe {
+        width: 100%;
+        height: 215px;
+    }
+    
+
+    .footer {
+        margin-top: 50px;
+    }
+
+}

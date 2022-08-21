@@ -1,0 +1,156 @@
+/* Main Heading */
+.main__title {
+    padding: 0 15px 20px 15px;
+}
+
+.main__title-heading {
+    width: 45%;
+    float: left;
+}
+
+.main__title-heading1 {
+    font-size: 30px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.main__title-list {
+    
+}
+
+.main__title-item {
+    display: inline-block;
+    padding: 10px 0;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.main__title-item a {
+    text-decoration: none;
+    color: #555;
+}
+
+.main__title-search {
+    width: 55%;
+    float: left;
+    position: relative;
+}
+
+.main__title-search p {
+    font-size: 18px;
+    color: #444;
+    display: inline-block;
+    padding: 30px;
+}
+
+.main__title-search select {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #444;
+    width: 60%;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+/* Main Right */
+.main__right-sensor-items {
+    width: calc(100%/3);
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .main__title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__title-heading {
+        width: 100%;
+    }
+
+    .main__title-search {
+        width: 100%;
+    }
+
+    .main__title-search p {
+        display: none;
+    }
+
+    .main__title-search select {
+        font-size: 16px;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #444;
+        width: 40%;
+        height: 50px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 0 10px;
+    }
+    .main__left {
+        display: none;
+    }
+
+    .main__right {
+        width: 100%;
+        margin-top: 100px;
+        
+    }
+
+}
+
+
+@media (max-width: 739px) {
+
+    .main__title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__title-heading {
+        width: 100%;
+    }
+
+    .main__title-search {
+        width: 100%;
+    }
+
+    .main__title-search p {
+        display: none;
+    }
+
+    .main__title-search select {
+        font-size: 16px;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #444;
+        width: 70%;
+        height: 50px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 0 10px;
+    }
+    .main__left {
+        display: none;
+    }
+
+    .main__right {
+        width: 100%;
+        margin-top: 100px;
+        
+    }
+
+    .main__right-sensor-items {
+        width: 50%;
+    }
+}

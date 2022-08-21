@@ -1,0 +1,90 @@
+
+
+.mainTT__right-items {
+    width: 100%;
+    line-height: 26px;
+    color: #444;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.mainTT__right-img {
+    width: 40%;
+    float: left;
+}
+
+.mainTT__right-img img {
+    width: 100%;
+}
+
+.mainTT__right-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid red;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainTT__right-date:hover {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mainTT__right-title {
+    width: 60%;
+    float: left;
+    padding: 20px;
+}
+
+.mainTT__right-heading {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mainTT_right-content {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+/* Hỏi thầy */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .main__left {
+        width: 100%;
+    }    
+    
+    .main__right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 739px) {
+    .main__left {
+        width: 100%;
+        display: block;
+    }    
+    
+    .main__right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .mainTT__right-img {
+        width: 100%;
+    }
+    
+    .mainTT__right-title {
+        width: 100%;
+    }
+
+}

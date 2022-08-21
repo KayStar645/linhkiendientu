@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #EE4D2D;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+    --header-height: 120px;
+    --navbar-height: 30px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* background-color: rgb(235, 232, 232); */
+    background-color: #f3f5f7;
+}   
+
+p {
+    font-size: 1.6rem;
+}
+
+.gird {
+    width: 1150px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* 
+.gird__full-width {
+    width: 100%;
+}
+
+.gird__row {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.clear {
+    clear: both;
+}
+
+/* Animation
+@keyframes fedaIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes headerNotificationGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+} */
+
