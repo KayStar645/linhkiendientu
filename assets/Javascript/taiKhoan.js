@@ -26,7 +26,7 @@ function dangKy() {
         flag = false;
         loiPass.style.color = 'red';
         loiPass.style.fontWeight = '400';
-        loiPass.innerHTML = 'Tên tài khoản phải ít nhất 6 kí tự!';
+        loiPass.innerHTML = 'Mật khẩu phải ít nhất 6 kí tự!';
     } else if(rePass != pass) {
         flag = false;
         loiRePass.style.color = 'red';
